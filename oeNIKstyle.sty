@@ -90,23 +90,35 @@
 % Redefinition of the maketitle command with custom stlye 
 % copied and modified the maketitle part of the 2019/01/04 v.03 oeNIKstyle template
 % this creates the first page of the thesis with the new OE and NIK logos
-\renewcommand*{\maketitle}{%
+\renewcommand*{\maketitle}
+{
 	\begin{titlepage}
+		\vspace*{0.5cm}
 		\centering % Sets the whole scope to be centering
 		{
 			%Header picture placement
-			\begin{minipage}{0.48\textwidth} \begin{flushleft}
+			\begin{minipage}{0.2\textwidth} \begin{flushleft}
 			\includegraphics[width=3cm, height=3cm]{header/OE}
 			\end{flushleft}\end{minipage}
-			\begin{minipage}{0.48\textwidth} \begin{flushright}
+			\begin{minipage}{0.2\textwidth} \begin{flushright}
 			\includegraphics[width=3cm, height=3cm]{header/NIK}
 			\end{flushright}\end{minipage}
-			%%% Set the "cursor" a big higher, so text can be inserted between the two pictures
-		    \vspace*{-2.5cm}	
+			
+			\vspace{1cm}
 		
-    	    \textsc{\Large \textbf{Neumann János}\\ \vspace{5px} \textbf{Informatikai kar} }\\
-			\vspace{8cm}
-			\resizebox{0.85\linewidth}{!}{\bfseries DIPLOMAMUNKA}
+    	    \textsc
+    	    {
+    	    	\textbf
+    	    	{
+    	    		\Large Óbudai Egyetem \\
+    	    		\vspace{10px}
+    	    		\Large Neumann János Informatikai kar
+        		}
+        	}
+        
+			\vspace{7.5cm}
+			
+			\resizebox{0.85\linewidth}{!}{\textbf{DIPLOMAMUNKA}}
 
 			\vfill
 		}
@@ -131,20 +143,7 @@
     \begin{titlepage}
         \centering
         {
-            \begin{minipage}{0.48\textwidth} \begin{flushleft}
-    		\includegraphics[width=3cm, height=3cm]{header/OE}
-    		\end{flushleft}\end{minipage}
-    		\begin{minipage}{0.48\textwidth} \begin{flushright}
-    		\includegraphics[width=3cm, height=3cm]{header/NIK}
-    		\end{flushright}\end{minipage}
-    
-    		%%% Set the "cursor" a big higher, so text can be inserted between the two pictures
-    	    \vspace*{-2.5cm}	
-    	
-    	    \textsc{\Large \textbf{Neumann János}\\ \vspace{5px} \textbf{Informatikai kar} }\\
-    	    
-            \vspace*{4cm}
-    
+        	\vspace*{0.5cm}
             \MakeUppercase{\Large{diplomamunka} }\\ \vspace{5px} \MakeUppercase{\Large{feladatlap}}\\
             \vspace{1cm}
         }
@@ -237,22 +236,10 @@
 
 \newcommand*{\makedeclaration}{
     \begin{titlepage}
+    	\vspace*{0.5cm}
         \centering
         {
-            \begin{minipage}{0.48\textwidth} \begin{flushleft}
-    		\includegraphics[width=3cm, height=3cm]{header/OE}
-    		\end{flushleft}\end{minipage}
-    		\begin{minipage}{0.48\textwidth} \begin{flushright}
-    		\includegraphics[width=3cm, height=3cm]{header/NIK}
-    		\end{flushright}\end{minipage}
-    
-    		%%% Set the "cursor" a big higher, so text can be inserted between the two pictures
-    	    \vspace*{-2.5cm}	
-    	
-    	    \textsc{\Large \textbf{Neumann János}\\ \vspace{5px} \textbf{Informatikai kar} }\\
-            \vspace*{4cm}
-            
-            \MakeUppercase{\normalsize{Hallgatói nyilatkozat} }\\
+        	\MakeUppercase{\normalsize{Hallgatói nyilatkozat} }\\
         }
 
         \vspace{1cm}
